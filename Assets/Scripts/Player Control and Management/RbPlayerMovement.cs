@@ -95,30 +95,7 @@ public class RbPlayerMovement : MonoBehaviour {
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
         jumping = Input.GetButton("Jump");
-        // crouching = Input.GetKey(KeyCode.LeftShift);
-      
-        //Crouching
-        // if (Input.GetKeyDown(KeyCode.LeftShift))
-        //     StartCrouch();
-        // if (Input.GetKeyUp(KeyCode.LeftShift))
-        //     StopCrouch();
     }
-
-    // private void StartCrouch() {
-    //     transform.localScale = crouchScale;
-    //     transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-    //     if (rb.velocity.magnitude > 0.5f) {
-    //         if (grounded) {
-    //             rb.AddForce(orientation.transform.forward * slideForce);
-    //         }
-    //     }
-    // }
-
-    // private void StopCrouch() {
-    //     transform.localScale = playerScale;
-    //     transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-    // }
-
     private void Movement() {
         //Extra gravity
         rb.AddForce(Vector3.down * Time.deltaTime * 10);
@@ -139,12 +116,6 @@ public class RbPlayerMovement : MonoBehaviour {
 
         //Set max speed
         float maxSpeed = this.maxSpeed;
-        
-        //If sliding down a ramp, add force down so player stays grounded and also builds speed
-        // if (crouching && grounded && readyToJump) {
-        //     rb.AddForce(Vector3.down * Time.deltaTime * 3000);
-        //     return;
-        // }
         
         //If speed is larger than maxspeed, cancel out the input so you don't go over max speed
         if (x > 0 && xMag > maxSpeed) x = 0;
