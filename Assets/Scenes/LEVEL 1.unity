@@ -1397,7 +1397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 497430700}
+  - {fileID: 543450653718182772}
   m_Father: {fileID: 181022274}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1774,38 +1774,6 @@ Transform:
   m_Children:
   - {fileID: 543450652822844469}
   m_Father: {fileID: 1839216678}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &497430699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 497430700}
-  m_Layer: 6
-  m_Name: Shooting Origin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &497430700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497430699}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 543450653718182772}
-  m_Father: {fileID: 415497365}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504140115
@@ -8681,13 +8649,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149177852366}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.12, z: 1.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 126845208}
-  m_Father: {fileID: 497430700}
+  m_Father: {fileID: 415497365}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919132148832005775
@@ -8722,6 +8690,9 @@ GameObject:
   - component: {fileID: 543450653718182772}
   - component: {fileID: 3469287837501519057}
   - component: {fileID: 1711813855653167131}
+  - component: {fileID: 3469287837501519060}
+  - component: {fileID: 3469287837501519059}
+  - component: {fileID: 3469287837501519058}
   m_Layer: 0
   m_Name: model
   m_TagString: Untagged
@@ -9022,6 +8993,89 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149177852366}
   m_Mesh: {fileID: -5495902117074765545, guid: 837cca0a385e80849a44adc64dc98701, type: 3}
+--- !u!95 &3469287837501519058
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149177852366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 34d69c43b204c4293869fb8606b190ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3469287837501519059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149177852366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c913ed91ac63ea648987f75d3b9f5191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecoilPositionTranform: {fileID: 181022274}
+  RecoilRotationTranform: {fileID: 415497365}
+  PositionDampTime: 6
+  RotationDampTime: 9
+  Recoil1: 20
+  Recoil2: 30
+  Recoil3: 20
+  Recoil4: 30
+  RecoilRotation: {x: -10, y: 4, z: 6}
+  RecoilKickBack: {x: 0.015, y: 0.01, z: -2}
+  RecoilRotation_Aim: {x: 0, y: 0, z: 0}
+  RecoilKickBack_Aim: {x: 0, y: 0, z: 0}
+  CurrentRecoil1: {x: 0, y: 0, z: 0}
+  CurrentRecoil2: {x: 0, y: 0, z: 0}
+  CurrentRecoil3: {x: 0, y: 0, z: 0}
+  CurrentRecoil4: {x: 0, y: 0, z: 0}
+  RotationOutput: {x: 0, y: 0, z: 0}
+  aim: 0
+--- !u!114 &3469287837501519060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149177852366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab5d2cab5f8a254492e157afc010118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recoil: {fileID: 3469287837501519059}
+  damage: 250
+  range: 1000
+  fireRate: 1
+  impactForce: 12000
+  origins:
+  - {fileID: 126845208}
+  bulletPrefab: {fileID: 3623631005156243535, guid: 3d002e9bdb1b04727b29b3211dfaab44,
+    type: 3}
+  flashOn: 0
+  nextTimeToFire: 0
+  playerRb: {fileID: 442164174}
+  thrust: 0
+  ammo: 5
+  currentAmmo: 0
+  totalAmmo: 25
+  reloadTime: 1.5
+  animator: {fileID: 3469287837501519058}
+  reloading: 0
+  ammoCounter: {fileID: 568012048}
+  ws: {fileID: 8982316}
 --- !u!1 &4657388025245344173
 GameObject:
   m_ObjectHideFlags: 0
