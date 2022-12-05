@@ -8956,7 +8956,7 @@ MonoBehaviour:
   flashOn: 0
   nextTimeToFire: 0
   playerRb: {fileID: 442164174}
-  thrust: 0
+  thrust: 10
   ammo: 30
   currentAmmo: 0
   totalAmmo: 150
@@ -9067,7 +9067,7 @@ MonoBehaviour:
   flashOn: 0
   nextTimeToFire: 0
   playerRb: {fileID: 442164174}
-  thrust: 0
+  thrust: 150
   ammo: 5
   currentAmmo: 0
   totalAmmo: 25
@@ -10526,7 +10526,7 @@ MonoBehaviour:
   flashOn: 0
   nextTimeToFire: 0
   playerRb: {fileID: 442164174}
-  thrust: 0
+  thrust: 50
   ammo: 10
   currentAmmo: 0
   totalAmmo: 50
@@ -10644,7 +10644,7 @@ MonoBehaviour:
   flashOn: 0
   nextTimeToFire: 0
   playerRb: {fileID: 442164174}
-  thrust: 0
+  thrust: 150
   ammo: 6
   currentAmmo: 0
   totalAmmo: 30
