@@ -1,7 +1,7 @@
 # MALFUNCTION-FPS
 video game i made in unity when i was learning in grade 6 (2021)
 
-this repository is a rewrite i made in 2022 when i got bored. [this is the original](https://github.com/HOIman6321/MALFUNCTION-FPS)
+this repository is a rewrite i made in 2022 when i got bored. [this is the original](https://github.com/HOIman6321/MALFUNCTION-FPS-OLD)
 
 ## PLAY HERE
 - [steam](https://store.steampowered.com/app/1899790/MALFUNCTION_FPS/) - most up-to-date
