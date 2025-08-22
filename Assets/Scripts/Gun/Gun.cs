@@ -75,8 +75,8 @@ public class Gun : MonoBehaviour
             GameObject bulletObject = Instantiate(bulletPrefab, _transform.position, _transform.rotation);
             Bullet bullet = bulletObject.GetComponent<Bullet>();
             bullet.force = _transform.forward;
-            currentAmmo -= 1f;
         }
+        currentAmmo -= 1f;
 
         if (playerRb != null)
         {

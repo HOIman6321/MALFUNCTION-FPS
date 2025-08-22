@@ -5584,7 +5584,7 @@ GameObject:
   - component: {fileID: 2342800293197634741}
   - component: {fileID: 154946261938780448}
   m_Layer: 12
-  m_Name: Humanoid Ragdoll
+  m_Name: Humanoid Fractured
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
