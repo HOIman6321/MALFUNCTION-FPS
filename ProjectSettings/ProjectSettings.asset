@@ -869,11 +869,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: c1d1afdf-8e44-49d0-956b-690d10922c9b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: MALFUNCTION
+  organizationId: hoiman7074
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
